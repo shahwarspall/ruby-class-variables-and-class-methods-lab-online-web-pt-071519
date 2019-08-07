@@ -27,7 +27,7 @@ class Song
   end 
   
   def self.artists
-    @@artists << artist
+    @@artists.uniq
   end 
   
   def self.artist_count 
